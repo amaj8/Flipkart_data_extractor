@@ -26,7 +26,7 @@ class Flip:
 			self.req['price_from'] = 'Min'
 		#Append units i.e. GB to ram size if it's given in the user requirements
 		try:
-			if req['ram']:
+			if self.req['ram']:
 				self.req['ram'] += ' GB'
 		except KeyError:
 			pass
